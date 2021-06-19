@@ -24,15 +24,6 @@ const styles = {
         // minHeight: 100,
         color: '#fff',
     },
-    // slide1: {
-    //     backgroundImage: {aysha},
-    // },
-    // slide2: {
-    //     backgroundImage: {aysha},
-    // },
-    // slide3: {
-    //     backgroundImage: {aysha},
-    // },
 };
 
 const particleOptions = {
@@ -50,15 +41,14 @@ const useStyles = makeStyles((theme) => ({
     root: {
         width: "auto", 
         backgroundColor: theme.palette.primary.main,
-        height: "800px"
+        height: "800px",
     },
     particles: {
-        position: "fixed",
+        position: "absolute",
         top: 0,
         right: 0,
         bottom: 0,
         left: 0,
-        zIndex: 0,
     },
     imgCont: {
         // position: 'absolute',

@@ -4,7 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
 import Navbar from "./components/Navbar";
 import Copyright from "./components/Copyright";
-import Wave from 'react-wavify'
+import AboutMe from "./components/AboutMe";
+import Wave from 'react-wavify';
 
 export const theme = createMuiTheme({
     // palette: {
@@ -33,10 +34,12 @@ export const theme = createMuiTheme({
 	},
 });
 
+
+
 const useStyle = makeStyles((theme) => ({
 	root: {
-		width: "100vw",
-		height: "100vh",
+		width: "100%",
+		height: "100%",
 		
 	}
 }));
@@ -46,20 +49,21 @@ function App() {
 	const classes = useStyle();
 	return (
 		<ThemeProvider theme={theme}>
-		<Paper className={classes.root}>
-		<Navbar />
-		<Wave 
-			fill={theme.palette.secondary.main}
-			paused={false}
-			options={{
-			height: 30,
-			amplitude: 10,
-			speed: 0.35,
-			points: 8
-			}}
-		/>
-		<Copyright />
-		</Paper>
+			<Paper className={classes.root}>
+				<Navbar />
+				<AboutMe />
+				<Wave 
+					fill={theme.palette.secondary.main}
+					paused={false}
+					options={{
+					height: 30,
+					amplitude: 10,
+					speed: 0.35,
+					points: 8
+					}}
+				/>
+				<Copyright />
+			</Paper>
 		</ThemeProvider>
 	);
 }
