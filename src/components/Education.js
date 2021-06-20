@@ -1,13 +1,16 @@
 import React from 'react';
 import { 
-    Button,
     Grid,
     Box,
     useMediaQuery,
+    List,
+    ListItem,
+    ListItemText,
+    ListItemAvatar,
     Typography,} from '@material-ui/core';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
+import SchoolIcon from '@material-ui/icons/School';
 import Fade from 'react-reveal/Fade';
-// import Slide from 'react-reveal/Slide';
 import edu from './edu.png';
 
 const useStyle = makeStyles((theme) => ({
@@ -30,14 +33,17 @@ const useStyle = makeStyles((theme) => ({
     },
     paraAbtMe:{
         width: "60%"
-    }
+    },
+    inline: {
+        display: 'inline',
+    },
 }));
 
 export default function Education() {
     const classes = useStyle();
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down(1000));
-    
+
     return (
         <div className={classes.root}>
             <Grid container direction="column" justify="center" alignItems="center">
@@ -53,24 +59,112 @@ export default function Education() {
                 <Grid item container direction="row" className={classes.contentAbtMe} >
                     <Grid item container direction="column" 
                     alignItems="center" className={classes.paraAbtMe}>
-                        <Fade bottom big>
+                        
                         <Grid item>
-                            <Typography variant={matches ? "h4" : 'h6'} paragraph>
-                                Officia labore ullamco do proident exercitation 
-                                sunt eu qui reprehenderit dolore cupidatat 
-                                mollit. Et deserunt est est ipsum sint reprehenderit 
-                                aliquip laboris proident proident sit culpa 
-                                incididunt. Dolore deserunt ipsum dolore aliqua 
-                                adipisicing id irure exercitation excepteur id est. 
-                                Adipisicing ex officia ipsum eu aute dolore id 
-                                laboris mollit minim.
-                            </Typography>
-                        </Grid>
+                            {/* <Typography variant={matches ? "h4" : 'h6'} paragraph> */}
                             
                         
-                            
-                        </Fade>
-                    </Grid><Grid item className={classes.imgGridAbtMe}>
+                                <List>
+                                    <Fade bottom delay={200} big>
+                                        <ListItem>
+                                            <ListItemAvatar>
+                                                <SchoolIcon />
+                                            </ListItemAvatar>
+                                            <ListItemText primary={
+                                                    <React.Fragment>
+                                                    <Typography
+                                                        component="span"
+                                                        variant={matches ? "h4" : 'h6'}
+                                                        className={classes.inline}
+                                                        color="textPrimary"
+                                                    >
+                                                        Bachelor of Technology in CSE
+                                                    </Typography>
+                                                    </React.Fragment>
+                                                } 
+                                                secondary={
+                                                <React.Fragment>
+                                                <Typography
+                                                    component="span"
+                                                    variant={matches ? "h4" : 'h6'}
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+                                                    Jalpaiguri Goverment Engineering College, Jalpaiguri <br/>
+                                                    2018-22,   CGPA - 9.0
+                                                </Typography>
+                                                </React.Fragment>
+                                            } />
+                                        </ListItem>
+                                    </Fade>
+                                    <Fade bottom delay={400} big>
+                                        <ListItem>
+                                            <ListItemAvatar>
+                                                <SchoolIcon />
+                                            </ListItemAvatar>
+                                            <ListItemText primary={
+                                                    <React.Fragment>
+                                                    <Typography
+                                                        component="span"
+                                                        variant={matches ? "h4" : 'h6'}
+                                                        className={classes.inline}
+                                                        color="textPrimary"
+                                                    >
+                                                        Higher Secondary (AMUB)
+                                                    </Typography>
+                                                    </React.Fragment>
+                                                } secondary={
+                                                <React.Fragment>
+                                                <Typography
+                                                    component="span"
+                                                    variant={matches ? "h4" : 'h6'}
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+                                                    SSSG, Aligarh Muslim University, Aligarh <br/>
+                                                    2015-17
+                                                </Typography>
+                                                </React.Fragment>
+                                            } />
+                                        </ListItem>
+                                    </Fade>
+                                    <Fade bottom delay={600} big>
+                                        <ListItem>
+                                            <ListItemAvatar>
+                                                <SchoolIcon />
+                                            </ListItemAvatar>
+                                            <ListItemText primary={
+                                                    <React.Fragment>
+                                                    <Typography
+                                                        component="span"
+                                                        variant={matches ? "h4" : 'h6'}
+                                                        className={classes.inline}
+                                                        color="textPrimary"
+                                                    >
+                                                        Senior Secondary (CBSE)
+                                                    </Typography>
+                                                    </React.Fragment>
+                                                } secondary={
+                                                <React.Fragment>
+                                                <Typography
+                                                    component="span"
+                                                    variant={matches ? "h4" : 'h6'}
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+                                                    Kendriya Vodyalaya NAD Karanja, Navi Mumbai <br/>
+                                                    2015
+                                                </Typography>
+                                                </React.Fragment>
+                                            } />
+                                        </ListItem>
+                                    </Fade>
+                                    
+                                </List>
+                            {/* </Typography> */}
+                        </Grid>
+                    </Grid>
+                    <Grid item container alignItems="center" className={classes.imgGridAbtMe}>
                         <Fade left big>
                             <Box >
                                 <img src={edu} width="100%" alt="gitl" />

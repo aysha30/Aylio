@@ -50,7 +50,9 @@ export default function Skills() {
                         </Fade>
                     </Typography>
                 </Grid>
-                
+                <Grid item container>
+                    
+                </Grid>
             </Grid>
         </div>
     )

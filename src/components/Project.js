@@ -50,6 +50,9 @@ export default function Project() {
                         </Fade>
                     </Typography>
                 </Grid>
+                <Grid item container>
+                    
+                </Grid>
                 
             </Grid>
         </div>

@@ -52,14 +52,14 @@ function AboutMe() {
                     </Typography>
                 </Grid>
                 <Grid item container direction="row" className={classes.contentAbtMe} >
-                    <Grid item className={classes.imgGridAbtMe}>
+                    <Grid item container alignItems="center" className={classes.imgGridAbtMe}>
                         <Fade left big>
                             <Box >
                                 <img src={girl} width="100%" alt="gitl" />
                             </Box>
                         </Fade>
                     </Grid>
-                    <Grid item container direction="column" 
+                    <Grid item container direction="column" justify="space-evenly"
                     alignItems="center" className={classes.paraAbtMe}>
                         <Fade bottom big>
                         <Grid item>
