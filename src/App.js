@@ -5,6 +5,9 @@ import { ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
 import Navbar from "./components/Navbar";
 import Copyright from "./components/Copyright";
 import AboutMe from "./components/AboutMe";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
+import Project from "./components/Project";
 import Wave from 'react-wavify';
 
 export const theme = createMuiTheme({
@@ -30,7 +33,7 @@ export const theme = createMuiTheme({
 		fontFamily: [
 			'Titillium Web', 'sans-serif',
 		].join(','),
-		transform: "none"
+		// transform: "none"
 	},
 });
 
@@ -52,6 +55,9 @@ function App() {
 			<Paper className={classes.root}>
 				<Navbar />
 				<AboutMe />
+				<Education />
+				<Skills />
+				<Project />
 				<Wave 
 					fill={theme.palette.secondary.main}
 					paused={false}
