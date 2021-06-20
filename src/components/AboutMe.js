@@ -23,7 +23,7 @@ const useStyle = makeStyles((theme) => ({
             padding:"50px"
         },
         [theme.breakpoints.up(1201)]:{
-            padding: "50px 150px 0px 150px",
+            padding: "50px 150px 100px 150px",
         },
     },
     imgGridAbtMe: {

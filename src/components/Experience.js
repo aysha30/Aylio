@@ -1,6 +1,5 @@
 import React from 'react';
 import { 
-    Button,
     Grid,
     Box,
     useMediaQuery,
@@ -23,7 +22,7 @@ const useStyle = makeStyles((theme) => ({
             padding:"50px"
         },
         [theme.breakpoints.up(1201)]:{
-            padding: "50px 150px 0px 150px",
+            padding: "100px 150px 100px 150px",
         },
     },
     paraAbtMe:{
@@ -31,7 +30,7 @@ const useStyle = makeStyles((theme) => ({
     }
 }));
 
-export default function Project() {
+export default function Experience() {
     const classes = useStyle();
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down(1000));
@@ -43,7 +42,7 @@ export default function Project() {
                     <Typography variant={matches ? "h1" : "h3"} color="primary">
                         <Fade left big>
                             <Box fontWeight="fontWeightBold">
-                                Projects
+                                Experience
                             </Box>
                         </Fade>
                     </Typography>

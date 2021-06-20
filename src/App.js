@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
+import Experience from "./components/Experience";
 import Wave from 'react-wavify';
 
 export const theme = createMuiTheme({
@@ -57,6 +58,7 @@ function App() {
 				<AboutMe />
 				<Education />
 				<Skills />
+				<Experience />
 				<Project />
 				<Wave 
 					fill={theme.palette.secondary.main}

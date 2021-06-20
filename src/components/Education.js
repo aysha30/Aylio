@@ -28,7 +28,7 @@ const useStyle = makeStyles((theme) => ({
             padding:"50px"
         },
         [theme.breakpoints.up(1201)]:{
-            padding: "50px 150px 0px 150px",
+            padding: "100px 150px 100px 150px",
         },
     },
     paraAbtMe:{
@@ -78,7 +78,10 @@ export default function Education() {
                                                         className={classes.inline}
                                                         color="textPrimary"
                                                     >
+                                                    <Box fontWeight="fontWeightBold">
                                                         Bachelor of Technology in CSE
+                                                    </Box>
+                                                        
                                                     </Typography>
                                                     </React.Fragment>
                                                 } 
@@ -110,7 +113,9 @@ export default function Education() {
                                                         className={classes.inline}
                                                         color="textPrimary"
                                                     >
-                                                        Higher Secondary (AMUB)
+                                                        <Box fontWeight="fontWeightBold">
+                                                            Higher Secondary (AMUB)
+                                                        </Box>
                                                     </Typography>
                                                     </React.Fragment>
                                                 } secondary={
@@ -141,7 +146,9 @@ export default function Education() {
                                                         className={classes.inline}
                                                         color="textPrimary"
                                                     >
-                                                        Senior Secondary (CBSE)
+                                                        <Box fontWeight="fontWeightBold">
+                                                            Senior Secondary (CBSE)
+                                                        </Box>
                                                     </Typography>
                                                     </React.Fragment>
                                                 } secondary={
