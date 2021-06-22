@@ -75,9 +75,8 @@ export default function Experience() {
                                                 Web Developer <br/> (May, 2021 - Present)
                                             </Box>
                                             <Box fontWeight="fontWeightSmall">
-                                            Applying suitable algorithms to design a desired model for the given
-                                            datasets. Using Scikit-Learn library in machine learning to design
-                                            classification and regression models.
+                                            Worked as a Web Developer at WebDriver, it's child Company.
+                                            Helped in website development with other team members.
                                             </Box>
                                         </Typography>
                                         
@@ -103,8 +102,10 @@ export default function Experience() {
                                             <br/>(Nov, 2020 - Dec, 2020)
                                         </Box>
                                         <Box fontWeight="fontWeightSmall">
-                                            Worked as a Web Developer at WebDriver, it's child Company.
-                                            Helped in website development with other team members.
+                                        Applying suitable algorithms to design a desired model for the given
+                                            datasets. Using Scikit-Learn library in machine learning to design
+                                            classification and regression models.
+                                            
                                         </Box>
                                     </Typography>
                                     
