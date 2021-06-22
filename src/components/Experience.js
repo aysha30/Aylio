@@ -31,7 +31,7 @@ const useStyle = makeStyles((theme) => ({
         display: "flex"
     },
     paper:{
-        width: "30%",
+        width: "400px",
     },
     box:{
         border: "5px",
@@ -55,7 +55,7 @@ export default function Experience() {
                         </Fade>
                     </Typography>
                 </Grid>
-                <Grid item container direction="row" justify="space-evenly"
+                <Grid component={Box} item container direction="row" justify="space-evenly"
                 className={classes.contentAbtMe}
                 >
                     <Grid item className={classes.paper}>
@@ -67,7 +67,7 @@ export default function Experience() {
                                     </Box>
                                     
                                     <CardContent>
-                                        <Typography align="center">
+                                        <Typography align="center" variant={matches ? "h4" : 'h6'}>
                                             <Box fontWeight="fontWeightBold">
                                                 Uoodmaish LLP
                                             </Box>
@@ -94,7 +94,7 @@ export default function Experience() {
                                 <img src={tsf} alt={tsf} />
                                 </Box>
                                 <CardContent>
-                                    <Typography align="center">
+                                    <Typography align="center" variant={matches ? "h4" : 'h6'}>
                                         <Box fontWeight="fontWeightBold">
                                             The Sparks Foundation
                                         </Box>

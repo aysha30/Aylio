@@ -1,7 +1,8 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { 
     Paper,
+    useMediaQuery,
     Grid,
     Typography,
     Container,} from '@material-ui/core';
@@ -10,6 +11,7 @@ import aysha from './aysha.png';
 import { autoPlay } from 'react-swipeable-views-utils';
 import SwipeableViews from 'react-swipeable-views';
 import Typewriter from 'typewriter-effect';
+import Wave from 'react-wavify';
 
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
@@ -20,7 +22,7 @@ const styles = {
         overflow: "hidden",
     },
     slide: {
-        margin: "20% 10% 10%",
+        margin: "20% 10% 12%",
         // minHeight: 100,
         color: '#fff',
     },
@@ -41,7 +43,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
         width: "auto", 
         backgroundColor: theme.palette.primary.main,
-        height: "800px",
+        height: "700px",
+        
     },
     particles: {
         position: "absolute",
@@ -58,9 +61,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function Navbar() {
     const classes = useStyles();
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.down(980));
 
     return (
-        <Paper square className={classes.root} >
+        <div>
+            <Paper square className={classes.root} >
             <Particles className={classes.particles} params={particleOptions} />
             <Container>
                 <Grid className={classes.imgCont}>
@@ -113,6 +119,20 @@ export default function Navbar() {
                 
                 {/* <div><img className={classes.img} src={aysha} alt="name" /></div> */}
             </Container>
+            
+                <Wave 
+					fill="#fff"
+					paused={false}
+					options={{
+					height: 20,
+					amplitude: 15,
+					speed: 0.35,
+					points: 8
+					}}
+				/>
         </Paper>
+        
+        </div>
     );
 }
+

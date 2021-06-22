@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
 	root:{
 		backgroundColor: theme.palette.secondary.main,
-		margin: 0,
+		// margin: 0,
 	},
 }))
 
@@ -19,7 +19,7 @@ function Copyright() {
 				Aylio
 			</Link> &nbsp;
 			{new Date().getFullYear()}
-			{'.'}
+			{'.'}<br/>{'Made by Aysha Yazdani with ❤'}
 			</Typography>
 		</div>
 		
