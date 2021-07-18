@@ -10,7 +10,7 @@ import {
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Fade from 'react-reveal/Fade';
 // import Slide from 'react-reveal/Slide';
-import girl from './girl.jpg';
+import girl from './images/girl.jpg';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -51,7 +51,7 @@ function AboutMe() {
             <Grid container direction="column" justify="center" alignItems="center">
                 <Grid item>
                     <Typography variant={matches ? "h1" : "h3"} color="secondary">
-                        <Fade right big>
+                        <Fade right>
                             <Box fontWeight="fontWeightBold">
                                 About Me
                             </Box>
@@ -60,7 +60,7 @@ function AboutMe() {
                 </Grid>
                 <Grid item container direction="row" className={classes.contentAbtMe} >
                     <Grid item container alignItems="center" className={classes.imgGridAbtMe}>
-                        <Fade left big>
+                        <Fade left>
                             <Box >
                                 <img src={girl} width="100%" alt="gitl" />
                             </Box>
@@ -70,7 +70,7 @@ function AboutMe() {
                     alignItems="center" className={classes.paraAbtMe}>
                         <Fade bottom big>
                         <Grid item>
-                            <Typography variant={matches ? "h4" : 'h6'} paragraph>
+                            <Typography variant="h6" align="center" paragraph>
                             "Hello friends, Welcome to my Aylio. This is Aysha Yazdani here, from Maharashtra, 
                             I am currently in my 3rd year of
                             B.Tech in Computer Science and Engineering at 
@@ -105,7 +105,7 @@ function AboutMe() {
                             
                         <Grid item>
                             <Button variant="contained" component={Link} target="_blank" rel="noopener"
-                            href="https://drive.google.com/file/d/1acvgR6fLYzW9UiZ7W9ltqOqRNtDXCNqf/view?usp=sharing"
+                            href="https://github.com/aysha30/my-resume"
                             underline="none"  color="secondary"
                             style={{padding: "10px", width: "200px",}}>
                             Resume

@@ -13,21 +13,21 @@ import Fade from 'react-reveal/Fade';
 import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
 import styled, { css } from 'styled-components';
-import html5 from './skill-logo/html.png';
-import arduino from './skill-logo/arduino.png';
-import bootstrap from './skill-logo/bootstrap.png';
-import cpp from './skill-logo/c++.png';
-import css3 from './skill-logo/css.png';
-import django from './skill-logo/django.png';
-import flask from './skill-logo/flask.png';
-import java from './skill-logo/java.png';
-import javascript from './skill-logo/javascript.png';
-import ml from './skill-logo/machine-learning.png';
-import mongodb from './skill-logo/mongodb.png';
-import nodejs from './skill-logo/nodejs.png';
-import postgresql from './skill-logo/postgresql.png';
-import react from './skill-logo/react.png';
-import python from './skill-logo/python.png';
+import html5 from './images/skill-logo/html.png';
+import arduino from './images/skill-logo/arduino.png';
+import bootstrap from './images/skill-logo/bootstrap.png';
+import cpp from './images/skill-logo/c++.png';
+import css3 from './images/skill-logo/css.png';
+import django from './images/skill-logo/django.png';
+import flask from './images/skill-logo/flask.png';
+import java from './images/skill-logo/java.png';
+import javascript from './images/skill-logo/javascript.png';
+import ml from './images/skill-logo/machine-learning.png';
+import mongodb from './images/skill-logo/mongodb.png';
+import nodejs from './images/skill-logo/nodejs.png';
+import postgresql from './images/skill-logo/postgresql.png';
+import react from './images/skill-logo/react.png';
+import python from './images/skill-logo/python.png';
 
 const useStyle = makeStyles((theme) => ({
     root: {
@@ -93,7 +93,7 @@ export default function Skills() {
             <Grid container direction="column" justify="center" alignItems="center">
                 <Grid item>
                     <Typography variant={matches ? "h1" : "h3"} color="secondary">
-                        <Fade right big>
+                        <Fade right>
                             <Box fontWeight="fontWeightBold">
                                 Skills
                             </Box>

@@ -1,32 +1,15 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import { 
     Paper,
-    useMediaQuery,
     Grid,
-    Typography,
-    Container,} from '@material-ui/core';
+    Typography} from '@material-ui/core';
 import Particles from 'react-particles-js';
-import aysha from './aysha.png';
-import { autoPlay } from 'react-swipeable-views-utils';
-import SwipeableViews from 'react-swipeable-views';
+import aysha from './images/aysha.png';
 import Typewriter from 'typewriter-effect';
 import Wave from 'react-wavify';
 
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
-
-const styles = {
-    root: {
-        position: 'relative',
-        overflow: "hidden",
-    },
-    slide: {
-        margin: "20% 10% 12%",
-        // minHeight: 100,
-        color: '#fff',
-    },
-};
 
 const particleOptions = {
     particles: {
@@ -54,72 +37,40 @@ const useStyles = makeStyles((theme) => ({
         left: 0,
     },
     imgCont: {
-        // position: 'absolute',
-        zIndex: 0,
-        // width: "100%"
+        height:552,
+        paddingTop: 150
+    },
+    typewriter: {
+        color:"#fff"
     }
 }));
 export default function Navbar() {
     const classes = useStyles();
-    const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.down(980));
 
     return (
         <div>
             <Paper square className={classes.root} >
             <Particles className={classes.particles} params={particleOptions} />
-            <Container>
-                <Grid className={classes.imgCont}>
+            <Grid container direction="column" justify="space-between" alignItems="stretch">
+                <Grid item container direction="column" alignItems="center" className={classes.imgCont}>
+                    <Grid item>
+                        <img src={aysha} alt="name" />
+                    </Grid>
+                    <Grid item>
+                    <Typography className={classes.typewriter} variant="h3">
+                        <Typewriter
+                        options={{
+                            strings: ["The Software Engineer you're looking for..."],
+                            autoStart: true,
+                            loop: true,
+                            changeDelay: "50",
+                        }}
+                        />
+                    </Typography>
+                    </Grid>
+                    
+                </Grid>
                 <Grid item>
-                <AutoPlaySwipeableViews interval={12000}>
-                    <div style={Object.assign({}, styles.slide)}>
-                        <img src={aysha} alt="name" />
-                        <Typography variant="h3">
-                            <Typewriter
-                            options={{
-                                strings: ["The Software Engineer you're looking for..."],
-                                autoStart: true,
-                                loop: true,
-                                changeDelay: "50",
-                            }}
-                            />
-                        </Typography>
-                        
-                    </div>
-                    <div style={Object.assign({}, styles.slide)}>
-                        <img src={aysha} alt="name" />
-                        <Typography variant="h3">
-                            <Typewriter
-                            options={{
-                                strings: ["The Software Engineer you're looking for..."],
-                                autoStart: true,
-                                loop: true,
-                                changeDelay: "50",
-                            }}
-                            />
-                        </Typography>
-                    </div>
-                    <div style={Object.assign({}, styles.slide)}>
-                        <img src={aysha} alt="name" />
-                        <Typography variant="h3">
-                            <Typewriter
-                            options={{
-                                strings: ["The Software Engineer you're looking for..."],
-                                autoStart: true,
-                                loop: true,
-                                changeDelay: "50",
-                            }}
-                            />
-                        </Typography>
-                    </div>
-                </AutoPlaySwipeableViews>
-                </Grid>
-                
-                </Grid>
-                
-                {/* <div><img className={classes.img} src={aysha} alt="name" /></div> */}
-            </Container>
-            
                 <Wave 
 					fill="#fff"
 					paused={false}
@@ -129,7 +80,12 @@ export default function Navbar() {
 					speed: 0.35,
 					points: 8
 					}}
-				/>
+				/></Grid>
+                
+                
+            </Grid>
+            
+                
         </Paper>
         
         </div>

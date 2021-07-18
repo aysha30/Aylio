@@ -11,7 +11,7 @@ import {
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import SchoolIcon from '@material-ui/icons/School';
 import Fade from 'react-reveal/Fade';
-import edu from './edu.png';
+import edu from './images/edu.png';
 
 const useStyle = makeStyles((theme) => ({
     root: {
@@ -49,7 +49,7 @@ export default function Education() {
             <Grid container direction="column" justify="center" alignItems="center">
                 <Grid item>
                     <Typography variant={matches ? "h1" : "h3"} color="primary">
-                        <Fade left big>
+                        <Fade left>
                             <Box fontWeight="fontWeightBold">
                                 Education
                             </Box>
@@ -65,7 +65,7 @@ export default function Education() {
                             
                         
                                 <List>
-                                    <Fade bottom delay={200} big>
+                                    <Fade bottom delay={200}>
                                         <ListItem>
                                             <ListItemAvatar>
                                                 <SchoolIcon />
@@ -74,7 +74,7 @@ export default function Education() {
                                                     <React.Fragment>
                                                     <Typography
                                                         component="span"
-                                                        variant={matches ? "h4" : 'h6'}
+                                                        variant={matches ? "h5" : 'h6'}
                                                         className={classes.inline}
                                                         color="textPrimary"
                                                     >
@@ -89,7 +89,7 @@ export default function Education() {
                                                 <React.Fragment>
                                                 <Typography
                                                     component="span"
-                                                    variant={matches ? "h4" : 'h6'}
+                                                    variant={matches ? "h5" : 'h6'}
                                                     className={classes.inline}
                                                     color="textPrimary"
                                                 >
@@ -100,7 +100,7 @@ export default function Education() {
                                             } />
                                         </ListItem>
                                     </Fade>
-                                    <Fade bottom delay={400} big>
+                                    <Fade bottom delay={400}>
                                         <ListItem>
                                             <ListItemAvatar>
                                                 <SchoolIcon />
@@ -109,7 +109,7 @@ export default function Education() {
                                                     <React.Fragment>
                                                     <Typography
                                                         component="span"
-                                                        variant={matches ? "h4" : 'h6'}
+                                                        variant={matches ? "h5" : 'h6'}
                                                         className={classes.inline}
                                                         color="textPrimary"
                                                     >
@@ -122,7 +122,7 @@ export default function Education() {
                                                 <React.Fragment>
                                                 <Typography
                                                     component="span"
-                                                    variant={matches ? "h4" : 'h6'}
+                                                    variant={matches ? "h5" : 'h6'}
                                                     className={classes.inline}
                                                     color="textPrimary"
                                                 >
@@ -133,7 +133,7 @@ export default function Education() {
                                             } />
                                         </ListItem>
                                     </Fade>
-                                    <Fade bottom delay={600} big>
+                                    <Fade bottom delay={600}>
                                         <ListItem>
                                             <ListItemAvatar>
                                                 <SchoolIcon />
@@ -142,7 +142,7 @@ export default function Education() {
                                                     <React.Fragment>
                                                     <Typography
                                                         component="span"
-                                                        variant={matches ? "h4" : 'h6'}
+                                                        variant={matches ? "h5" : 'h6'}
                                                         className={classes.inline}
                                                         color="textPrimary"
                                                     >
@@ -155,7 +155,7 @@ export default function Education() {
                                                 <React.Fragment>
                                                 <Typography
                                                     component="span"
-                                                    variant={matches ? "h4" : 'h6'}
+                                                    variant={matches ? "h5" : 'h6'}
                                                     className={classes.inline}
                                                     color="textPrimary"
                                                 >
@@ -172,7 +172,7 @@ export default function Education() {
                         </Grid>
                     </Grid>
                     <Grid item container alignItems="center" className={classes.imgGridAbtMe}>
-                        <Fade left big>
+                        <Fade left>
                             <Box >
                                 <img src={edu} width="100%" alt="gitl" />
                             </Box>

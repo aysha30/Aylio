@@ -8,8 +8,9 @@ import {
     Typography,} from '@material-ui/core';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Fade from 'react-reveal/Fade';
-import uoodma from './Uoodma.png';
-import tsf from './tsf.png';
+import uoodma from './images/Uoodma.png';
+import tsf from './images/tsf.png';
+import agrobuy from './images/agrobuy.PNG'
 
 const useStyle = makeStyles((theme) => ({
     root: {
@@ -48,71 +49,96 @@ export default function Experience() {
             <Grid container direction="column" justify="center" alignItems="center">
                 <Grid item>
                     <Typography variant={matches ? "h1" : "h3"} color="primary">
-                        <Fade left big>
+                        <Fade left>
                             <Box fontWeight="fontWeightBold">
                                 Experience
                             </Box>
                         </Fade>
                     </Typography>
                 </Grid>
-                <Grid component={Box} item container direction="row" justify="space-evenly"
-                className={classes.contentAbtMe}
+                <Grid component={Box} item container direction="row" justifyContent="space-evenly" alignItems="flex-start"
+                className={classes.contentAbtMe} spacing={3}
                 >
-                    <Grid item className={classes.paper}>
-                            <Fade bottom big>
-                            <Paper >
-                                <Box  border={4} borderRadius={10} borderColor="secondary.main" p={3} >
-                                    <Box align="center">
-                                        <img src={uoodma} alt={uoodma} />
+                <Grid item  className={classes.paper}>
+                    <Fade bottom big>
+                        <Paper component={Box} border={4} borderRadius={10} borderColor="secondary.main" p={3}>
+                            <Box align="center">
+                            <img width="80%" src={agrobuy} alt={agrobuy} />
+                            </Box>
+                            <CardContent>
+                                <Typography align="center" variant={matches ? "h4" : 'h6'}>
+                                    <Box fontWeight="fontWeightBold">
+                                        Agrobuy
                                     </Box>
-                                    
-                                    <CardContent>
-                                        <Typography align="center" variant={matches ? "h4" : 'h6'}>
-                                            <Box fontWeight="fontWeightBold">
-                                                Uoodmaish LLP
-                                            </Box>
-                                            <Box fontWeight="fontWeightMedium">
-                                                Web Developer <br/> (May, 2021 - Present)
-                                            </Box>
-                                            <Box fontWeight="fontWeightSmall">
-                                            Worked as a Web Developer at WebDriver, it's child Company.
-                                            Helped in website development with other team members.
-                                            </Box>
-                                        </Typography>
+                                    <Box fontWeight="fontWeightMedium">
+                                        Web Development Intern 
+                                        <br/>(July, 2021 - Present)
+                                    </Box>
+                                    <Box fontWeight="fontWeightSmall">
+                                    Applying suitable algorithms to design a desired model for the given
+                                        datasets. Using Scikit-Learn library in machine learning to design
+                                        classification and regression models.
                                         
-                                    </CardContent>
+                                    </Box>
+                                </Typography>
+                                
+                            </CardContent>
+                        </Paper>
+                        </Fade>
+                    </Grid>
+                    <Grid item className={classes.paper}>
+                        <Fade bottom big>
+                        <Paper  component={Box} border={4} borderRadius={10} borderColor="secondary.main" p={3}>
+                            <Box align="center">
+                                    <img src={uoodma} alt={uoodma} />
                                 </Box>
                                 
-                            </Paper>
-                            </Fade>
-                        </Grid>
-                        <Grid item  className={classes.paper}>
-                        <Fade bottom big>
-                            <Paper component={Box} border={4} borderRadius={10} borderColor="secondary.main" p={3}>
-                                <Box align="center">
-                                <img src={tsf} alt={tsf} />
-                                </Box>
                                 <CardContent>
                                     <Typography align="center" variant={matches ? "h4" : 'h6'}>
                                         <Box fontWeight="fontWeightBold">
-                                            The Sparks Foundation
+                                            Uoodmaish LLP
                                         </Box>
                                         <Box fontWeight="fontWeightMedium">
-                                            Data Science Intern 
-                                            <br/>(Nov, 2020 - Dec, 2020)
+                                            Web Developer <br/> (May, 2021 - July, 2021)
                                         </Box>
                                         <Box fontWeight="fontWeightSmall">
-                                        Applying suitable algorithms to design a desired model for the given
-                                            datasets. Using Scikit-Learn library in machine learning to design
-                                            classification and regression models.
-                                            
+                                        Worked as a Web Developer at WebDriver, it's child Company.
+                                        Helped in website development with other team members.
                                         </Box>
                                     </Typography>
                                     
                                 </CardContent>
-                            </Paper>
-                            </Fade>
-                        </Grid>
+                            
+                        </Paper>
+                        </Fade>
+                    </Grid>
+                    <Grid item  className={classes.paper}>
+                    <Fade bottom big>
+                        <Paper component={Box} border={4} borderRadius={10} borderColor="secondary.main" p={3}>
+                            <Box align="center">
+                            <img src={tsf} alt={tsf} />
+                            </Box>
+                            <CardContent>
+                                <Typography align="center" variant={matches ? "h4" : 'h6'}>
+                                    <Box fontWeight="fontWeightBold">
+                                        The Sparks Foundation
+                                    </Box>
+                                    <Box fontWeight="fontWeightMedium">
+                                        Data Science Intern 
+                                        <br/>(Nov, 2020 - Dec, 2020)
+                                    </Box>
+                                    <Box fontWeight="fontWeightSmall">
+                                    Applying suitable algorithms to design a desired model for the given
+                                        datasets. Using Scikit-Learn library in machine learning to design
+                                        classification and regression models.
+                                        
+                                    </Box>
+                                </Typography>
+                                
+                            </CardContent>
+                        </Paper>
+                        </Fade>
+                    </Grid>
                     
                 </Grid>
                 
